@@ -1,0 +1,32 @@
+.scroll-container {
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 30px;
+    width: 1000px;
+    margin: auto;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden;
+    color:rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.568);
+    display: flex;
+    white-space: nowrap;
+  }
+
+  .scroll-text {
+    animation: animate_text 30s linear infinite;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: auto;
+    font-size: 25px;
+  }
+
+@keyframes animate_text {
+    from {
+        transform: translate3d(0 ,0 0);
+    }
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
+
+}
